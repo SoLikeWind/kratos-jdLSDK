@@ -1,0 +1,26 @@
+server:
+  http:
+    addr: 0.0.0.0:8000
+    timeout: 1s
+  grpc:
+    addr: 0.0.0.0:9000
+    timeout: 1s
+data:
+  database:
+    driver: mysql
+    source: root:root@tcp(127.0.0.1:3306)/test?parseTime=True&loc=Local
+  redis:
+    addr: 127.0.0.1:6379
+    read_timeout: 0.2s
+    write_timeout: 0.2s
+jdl:
+  # env: development
+  # app_key: "a4a18405e1224528b3e6cd48db10ccf6"
+  # app_secret: "22ee31b3fce042c7aaa2e0761c070e66"
+  # access_token: "4121736610b44c13a6d9348386b3dbbe"
+  # LOP_DN: "ECAP"
+  env: development
+  app_key: "62d07644754843cc882fca7c01476c4f"
+  app_secret: "0c2c8b6b7c10481ea639f6daa09ac02e"
+  access_token: "78c246c0ab564e67add6296a9eaf04a1"
+  LOP_DN: "ECAP"
